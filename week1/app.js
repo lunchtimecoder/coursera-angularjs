@@ -5,7 +5,7 @@
   'use strict'
   angular.module('MyApp',[])
       .controller('MyController', function ($scope) {
-  $scope.name = "Some Test Text"
+  $scope.name = "Some Test Text";
   });
 
-});
+})();
