@@ -4,10 +4,8 @@
 (function () {
   'use strict'
   angular.module('MyApp',[])
-      .controller('MyController', MyController);
-
-  function MyController($scope) {
+      .controller('MyController', function ($scope) {
   $scope.name = "Some Test Text"
-  }
+  });
 
 });
