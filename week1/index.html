@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MyApp">
 <head>
     <meta charset="UTF-8">
     <title>AngularJS_Week1</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
 <h1>Index</h1>
 <p>Wk1</p>
+<div ng-controller="MyController">
+<p>He is some test text {{name}}</p>
+</div>
 </body>
 </html>
