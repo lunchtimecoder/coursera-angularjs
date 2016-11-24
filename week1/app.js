@@ -17,7 +17,7 @@
           //Test if no items
           if(inputItems != "") {
             //Test if less than or equal to 3 items
-            if(itemsCount.length <= 3) {
+            if(itemsArray.length <= 3) {
               rtn = {"message":"Enjoy!","colour":"boxColorBlue","note":""};
             } else {
               rtn = {"message":"Too Much!","colour":"boxColorRed","note":""};
