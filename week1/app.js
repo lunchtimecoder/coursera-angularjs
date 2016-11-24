@@ -23,8 +23,8 @@
               rtn = { "message":"Too Much!", "colour":"boxColorRed", "note":""};
             }
             //Check for any empty items
-            if(itemsArray.filter(checkForEmpties).length == 0) { rtn.note = ""; }
-            else { rtn.note = "I do NOT consider an empty item valid food!"; }
+            //if(itemsArray.filter(checkForEmpties).length == 0) { rtn.note = ""; }
+            //else { rtn.note = "I do NOT consider an empty item valid food!"; }
           }
           return rtn;
         }; //close processItems
