@@ -3,34 +3,35 @@
   angular.module("MyApp", [])
       .controller("MyController", function ($scope)
       {
-        $scope.items = "";
-        $scope.basket = {"message":"","colour":"boxColorBlack","note":""};
-        $scope.rtnColour = "boxColorBlack";
+        //init vars
+        $scope.items = "";  //will hold items to process
+        $scope.basket = {"message":"","colour":"boxColorBlack","note":""}; //return object
         $scope.displayMsg = function () {
-          $scope.basket = procItems($scope.items)
+          $scope.basket = processItems($scope.items)
         };
 
-        function procItems(inputItems) {
+        function processItems(inputItems) {
           var itemsArray = inputItems.split(",");
-          var itemsCount = itemsArray.length;
           var rtn = {"message":"Please enter data first","colour":"boxColorBlack","note":""};
+
+          //Test if no items
           if(inputItems != "") {
-            if(itemsCount <= 3) {
+            //Test if less than or equal to 3 items
+            if(itemsCount.length <= 3) {
               rtn = {"message":"Enjoy!","colour":"boxColorBlue","note":""};
             } else {
               rtn = {"message":"Too Much!","colour":"boxColorRed","note":""};
             }
+            //Check for any empty items
+            if(itemsArray.filter(checkForEmpties).length == 0) { rtn.note = ""; }
+            else { rtn.note = "I do NOT consider an empty item valid food!"; }
           }
-          rtn.note = checkForEmpties(itemsArray);
           return rtn;
-        };
+        }; //close processItems
 
-        function checkForEmpties(itemsToCheck) {
-          var rtnNote = itemsToCheck;
-          for (var i in itemsToCheck) {
-            if(i.trim.length < 1 ) {rtnNote = "I do NOT consider an empty item valid food!";}
-          }
-          return rtnNote
+        //Test for empty string
+        function checkForEmpties(item) {
+          return item.replace(/^\s+|\s+$/gm,'') == 0
         };
-      });  //close controller
+      });  //close MyController
 })(); //close function
