@@ -31,8 +31,8 @@
 
         //Test for empty string
         function checkForEmpties(item) {
-          return item.trim.length == 0
-          //return item.replace(/^\s+|\s+$/gm,'') == 0
+          //return item.trim.length == 0
+          return item.replace(/^\s+|\s+$/gm,'') == 0
         };
       });  //close MyController
 })(); //close function
