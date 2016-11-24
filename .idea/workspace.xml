@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e87a97c-800c-4333-9d07-1e5a659f295c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week1/app.js" afterPath="$PROJECT_DIR$/week1/app.js" />
     </list>
     <ignored path="coursera-angularjs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -613,7 +612,7 @@
       <option name="presentableId" value="Default" />
       <updated>1479767374047</updated>
       <workItem from="1479767377342" duration="471000" />
-      <workItem from="1479767885930" duration="8567000" />
+      <workItem from="1479767885930" duration="8575000" />
     </task>
     <task id="LOCAL-00001" summary="kk">
       <created>1479769383893</created>
@@ -734,11 +733,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480029407060</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="AngularJS Week 1 First code">
+      <created>1480029542668</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1480029542668</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9038000" />
+    <option name="totallyTimeSpent" value="9046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="22" width="1244" height="778" extended-state="6" />
