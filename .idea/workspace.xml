@@ -27,8 +27,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/week1/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="390">
+              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -613,7 +613,7 @@
       <option name="presentableId" value="Default" />
       <updated>1479767374047</updated>
       <workItem from="1479767377342" duration="471000" />
-      <workItem from="1479767885930" duration="7399000" />
+      <workItem from="1479767885930" duration="7674000" />
     </task>
     <task id="LOCAL-00001" summary="kk">
       <created>1479769383893</created>
@@ -699,11 +699,25 @@
       <option name="project" value="LOCAL" />
       <updated>1480028044052</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="AngularJS Week 1 First code">
+      <created>1480028301272</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1480028301272</updated>
+    </task>
+    <task id="LOCAL-00014" summary="AngularJS Week 1 First code">
+      <created>1480028488838</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1480028488838</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7870000" />
+    <option name="totallyTimeSpent" value="8145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="22" width="1244" height="778" extended-state="6" />
@@ -833,8 +847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week1/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="390">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
           <folding />
         </state>
       </provider>
