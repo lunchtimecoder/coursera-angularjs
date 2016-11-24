@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="MyApp">
-<head>
-    <meta charset="UTF-8">
-    <title>AngularJS_Week1</title>
+<HTML ng-app="MyApp">
+<HEAD>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <TITLE>Week1Assignment</TITLE>
     <script src="angular.min.js"></script>
-    <script src="app.js"></script>
-</head>
-<body>
-<h1>Index</h1>
-<p>Wk1</p>
+    <script src="My.js"></script>
+</HEAD>
+<BODY>
+<h1>Food!</h1>
 <div ng-controller="MyController">
-<p>Test Text = {{name}}</p>
+    <p>Testing</p>
+    <p>Food List:</p>
+    <input type="text" class="{{basket.colour}}" ng-model="items"/>
+    <button ng-click="displayMsg();">Check If Too Much</button>
+    <br>
+    {{basket.message}}<br>
+    {{basket.note}}
 </div>
-</body>
-</html>
+</BODY>
+</HTML>

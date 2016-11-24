@@ -1,0 +1,12 @@
+.boxColorRed {
+    border-style: solid;
+    border-color: #ff0000;
+}
+.boxColorBlack {
+    border-style: solid;
+    border-color: #070707;
+}
+.boxColorBlue {
+    border-style: solid;
+    border-color: #0d35e8;
+}
