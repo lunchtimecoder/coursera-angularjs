@@ -1,9 +1,9 @@
 (function () {
-  'use strict'
+  'use strict';
   angular.module("LunchCheck", [])
       .controller("LunchCheckController", LunchCheckController);
 
-  LunchCheckController.$inject = ['$scope']
+  LunchCheckController.$inject = ['$scope'];
 
   function LunchCheckController($scope) {
       //init vars
@@ -20,8 +20,8 @@
           //Test if no items
           if(inputItems != "") {
               //Check for any empty items
-              var numEmpty = itemsArray.filter(checkForEmpties).length
-              var numItems = (itemsArray.length - numEmpty)
+              var numEmpty = itemsArray.filter(checkForEmpties).length;
+              var numItems = (itemsArray.length - numEmpty);
             if(numEmpty == 0) { rtn.note = ""; }
               else { rtn.note = "I do NOT consider an empty item valid food!"; }
             //Test if less than or equal to 3 items
