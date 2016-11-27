@@ -20,12 +20,12 @@
           //Test if no items
           if(inputItems != "") {
               //Check for any empty items
-              var numEmpty = itemsArray.filter(checkForEmpties).length;
-              var numItems = (itemsArray.length - numEmpty);
+              var numEmpty = itemsArray.filter(checkForEmpties).length;  //see if any items empty
+              var numItems = (itemsArray.length - numEmpty);             //calc num items without empties
             if(numEmpty == 0) { rtn.note = ""; }
               else { rtn.note = "I do NOT consider an empty item valid food!"; }
             //Test if less than or equal to 3 items
-            rtn.textColour = {color:'green'};
+            rtn.textColour = {color:'green'};                            //set text colour as green
             if( numItems <= 3) { rtn.message = "Enjoy!"; } else { rtn.message = "TooMuch!"; }
           }
           return rtn;
