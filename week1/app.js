@@ -9,7 +9,7 @@
       //init vars
       $scope.items = "";  //will hold items to process
       $scope.basket = {"message": "", "colour": "'black'", "note": ""}; //return object
-      $scope.textColour = {"colour": "'red'"}
+      $scope.textColour = '"colour:red"'
       $scope.displayMsg = function () {
           $scope.basket = processItems($scope.items)
       }
