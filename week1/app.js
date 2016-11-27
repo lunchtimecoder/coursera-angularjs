@@ -8,8 +8,8 @@
   function LunchCheckController($scope) {
       //init vars
       $scope.items = "";  //will hold items to process
-      $scope.basket = {"message": "", "colour": "'black'", "note": ""}; //return object
-      $scope.textColour = '"colour:red"'
+      $scope.basket = {"message": "", "colour": '"color:red"', "note": ""}; //return object
+      $scope.textColour = '"color:red"'
       $scope.displayMsg = function () {
           $scope.basket = processItems($scope.items)
       }
