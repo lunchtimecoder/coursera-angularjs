@@ -15,7 +15,7 @@
   }
   function processItems(inputItems) {
           var itemsArray = inputItems.split(",");
-          var rtn = { "message":"Please enter data first", "colour":"'color':'red'", "note":""};
+          var rtn = { "message":"Please enter data first", "colour":"color:'red'", "note":""};
 
           //Test if no items
           if(inputItems != "") {
@@ -27,10 +27,10 @@
             //Test if less than or equal to 3 items
             if( numItems <= 3) {
                 rtn.message = "Enjoy!";
-                rtn.colour = "'color':'green'";
+                rtn.colour = "color:'green'";
             } else {
                 rtn.message = "TooMuch!";
-                rtn.colour = "'color':'green'";
+                rtn.colour = "color:'green'";
             }
           }
           return rtn;

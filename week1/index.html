@@ -23,8 +23,10 @@
              ng-click="displayMsg()">Check If Too Much</button>
          </div>
          <div ng-style="basket.colour" class="form-group message">
-             {{basket.message}}<br>
-             {{basket.note}}
+             <span ng-style="basket.colour">
+                 {{basket.message}}<br>
+                 {{basket.note}}
+             </span>
          </div>
    </div>
    <script src="angular.min.js"></script>
