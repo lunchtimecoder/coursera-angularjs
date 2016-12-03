@@ -23,8 +23,8 @@
     function ShoppingListCheckOffService() {
         //maintain lists
         var ShoppingService = this;
-        var ToBuyList = [{name:'item1',quantity:'10'}];
-        var BoughtList = [];
+        ShoppingService.ToBuyList = [{name:'item1',quantity:'10'}];
+        ShoppingService.BoughtList = [];
 
         ShoppingService.moveToBought = function (itemName, itemQty) {
             var item = { name: itemName, quantity: itemQty };
