@@ -3,19 +3,37 @@
 
     angular.module('ShoppingListCheckOff', [])
         .controller('ToBuyController', ToBuyController)
-        .controller('AlreadyBoughtController', AlreadyBoughtController);
+        .controller('AlreadyBoughtController', AlreadyBoughtController)
+        .service('ShoppingListCheckOffService', ShoppingListCheckOffService);
 
-    ToBuyController.$inject = ['$scope'];
-    function ToBuyController($scope) {
+    ToBuyController.$inject = ['ShoppingListCheckOffService'];
+    function ToBuyController(ShoppingListCheckOffService) {
         var ToBuyList = this;
         ToBuyList.message = "Everything is bought";
-        $scope.test = "this is a test";
-    }
-    AlreadyBoughtController.$inject = ['$scope'];
-    function AlreadyBoughtController() {
+        ToBuyList.items = ShoppingListCheckOffService.ToBuyList;
+    } //End of ToBuyController
+
+    AlreadyBoughtController.$inject = ['ShoppingListCheckOffService'];
+    function AlreadyBoughtController(ShoppingListCheckOffService) {
         var BoughtList = this;
         BoughtList.message = "Nothing bought yet";
-    }
+        BoughtList.items = ShoppingListCheckOffService.BoughtList;
+    } //End of AlreadyBoughtController
 
+    function ShoppingListCheckOffService() {
+        //maintain lists
+        var ShoppingService = this;
+        var ToBuyList = [{'name':'item1','quantity':'10'}];
+        var BoughtList = [];
+
+        ShoppingService.moveToBought = function (itemName, itemQty) {
+            var item = { name: itemName, quantity: itemQty };
+            //remove and then add
+            if(ToBuyList.indexOf(item.name) !== -1) {
+                ToBuyList.splice(i, 1);
+                BoughtList.push(item);
+            }
+        }
+    }
 
 })(); //End of all
