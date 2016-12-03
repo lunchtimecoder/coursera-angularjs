@@ -26,15 +26,15 @@
     function ShoppingListCheckOffService() {
         //maintain lists
         var ShoppingService = this;
-        ShoppingService.ToBuyList = [{name:'item1',quantity:'10'}];
+        ShoppingService.ToBuyList = [{name:'Racing Car',quantity:'10'}];
         ShoppingService.BoughtList = [];
 
         ShoppingService.moveToBought = function (itemName, itemQty) {
             var item = { name: itemName, quantity: itemQty };
             //remove and then add
-            if(ToBuyList.indexOf(item.name) !== -1) {
-                ToBuyList.splice(i, 1);
-                BoughtList.push(item);
+            if(ShoppingService.ToBuyList.indexOf(item.name) !== -1) {
+                ShoppingService.ToBuyList.splice(i, 1);
+                ShoppingService.BoughtList.push(item);
             }
         }
     }
