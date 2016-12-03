@@ -30,12 +30,9 @@
         ShoppingService.BoughtList = [];
 
         ShoppingService.moveToBought = function (moveItem) {
-            //remove and then add
-            var itemIndex = ShoppingService.ToBuyList.indexOf(moveItem.name);
-            if(itemIndex !== -1) {
-                ShoppingService.ToBuyList.splice(itemIndex, 1);
-                ShoppingService.BoughtList.push(moveItem);
-            }
+            //add to bought and remove from buy
+            ShoppingService.BoughtList.push(ShoppingService.ToBuyList[moveItem]);
+            ShoppingService.ToBuyList.splice(moveItem, 1);
         }
     }
 
