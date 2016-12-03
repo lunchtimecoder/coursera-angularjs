@@ -1,7 +1,3 @@
-/**
- * Created by markpateman on 03/12/2016.
- */
-
 (function () {
     'use strict';
 
@@ -12,8 +8,13 @@
     ToBuyController.$inject = ['$scope'];
     function ToBuyController($scope) {
         var ToBuyList = this;
-        ToBuyList.message = "Empty";
+        ToBuyList.message = "Everything is bought";
         $scope.test = "this is a test";
+    }
+    AlreadyBoughtController.$inject = ['$scope'];
+    function AlreadyBoughtController() {
+        var BoughtList = this;
+        BoughtList.message = "Nothing bought yet";
     }
 
 
