@@ -32,8 +32,9 @@
         ShoppingService.moveToBought = function (itemName, itemQty) {
             var item = { name: itemName, quantity: itemQty };
             //remove and then add
-            if(ShoppingService.ToBuyList.indexOf(item.name) !== -1) {
-                ShoppingService.ToBuyList.splice(i, 1);
+            var itemIndex = ShoppingService.ToBuyList.indexOf(item.name);
+            if(itemIndex !== -1) {
+                ShoppingService.ToBuyList.splice(itemIndex, 1);
                 ShoppingService.BoughtList.push(item);
             }
         }
