@@ -12,7 +12,7 @@
         ToBuyList.message = "Everything is bought";
         ToBuyList.items = ShoppingListCheckOffService.ToBuyList;
         ToBuyList.bought = function (itemName, itemQty) {
-            ShoppingListCheckOffService.moveToBoght(itemName, itemQty);
+            ShoppingListCheckOffService.moveToBought(itemName, itemQty);
         }
     } //End of ToBuyController
 
