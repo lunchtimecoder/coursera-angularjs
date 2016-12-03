@@ -36,7 +36,7 @@
         {{ ToBuyList.message }}
      <h2>To Buy:</h2>
      <ul>
-         <li ng-repeat="anItem in ToBuyList.items">Buy {{ anItem.quantity }} {{ anItem.name }}<button class="btn btn-default"ng-click="ToBuyList.bought(anItem.name,anItem.quantity);"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
+         <li ng-repeat="anItem in ToBuyList.items">Buy {{ anItem.quantity }} {{ anItem.name }}<button class="btn btn-default" ng-click="ToBuyList.bought(anItem);"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
        <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
        <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
      </ul>

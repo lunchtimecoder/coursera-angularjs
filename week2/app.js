@@ -11,8 +11,8 @@
         var ToBuyList = this;
         ToBuyList.message = "Everything is bought";
         ToBuyList.items = ShoppingListCheckOffService.ToBuyList;
-        ToBuyList.bought = function (itemName, itemQty) {
-            ShoppingListCheckOffService.moveToBought(itemName, itemQty);
+        ToBuyList.bought = function (boughtItem) {
+            ShoppingListCheckOffService.moveToBought(boughtItem);
         }
     } //End of ToBuyController
 
@@ -29,12 +29,12 @@
         ShoppingService.ToBuyList = [{name:'Space Car',quantity:'10'}];
         ShoppingService.BoughtList = [];
 
-        ShoppingService.moveToBought = function (itemName, itemQty) {
+        ShoppingService.moveToBought = function (moveItem) {
             //remove and then add
-            var itemIndex = ShoppingService.ToBuyList.indexOf(itemName);
+            var itemIndex = ShoppingService.ToBuyList.indexOf(moveItem.name);
             if(itemIndex !== -1) {
                 ShoppingService.ToBuyList.splice(itemIndex, 1);
-                ShoppingService.BoughtList.push({ name: itemName, quantity: itemQty });
+                ShoppingService.BoughtList.push(moveItem);
             }
         }
     }
