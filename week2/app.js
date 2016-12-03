@@ -11,6 +11,9 @@
         var ToBuyList = this;
         ToBuyList.message = "Everything is bought";
         ToBuyList.items = ShoppingListCheckOffService.ToBuyList;
+        ToBuyList.bought = function (itemName, itemQty) {
+            ShoppingListCheckOffService.moveToBoght(itemName, itemQty);
+        }
     } //End of ToBuyController
 
     AlreadyBoughtController.$inject = ['ShoppingListCheckOffService'];
