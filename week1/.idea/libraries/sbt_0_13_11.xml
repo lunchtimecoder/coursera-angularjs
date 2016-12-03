@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="sbt.0.13.11">
+    <CLASSES>
+      <root url="file://$USER_HOME$/myApps/sbt/bin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/myApps/sbt/bin" recursive="false" />
+  </library>
+</component>
