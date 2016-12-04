@@ -14,6 +14,9 @@
         ToBuyList.bought = function (boughtItem) {
             ShoppingListCheckOffService.moveToBought(boughtItem);
         }
+        ToBuyList.isEmpty = function() {
+            return (ToBuyList.items.length==0) ? "Everything is bought" : "";
+        }
     } //End of ToBuyController
 
     AlreadyBoughtController.$inject = ['ShoppingListCheckOffService'];
@@ -21,6 +24,9 @@
         var BoughtList = this;
         BoughtList.message = "Nothing bought yet";
         BoughtList.items = ShoppingListCheckOffService.BoughtList;
+        BoughtList.isEmpty = function() {
+            return (BoughtList.items.length==0) ? "Nothing bought yet" : "";
+        }
     } //End of AlreadyBoughtController
 
     function ShoppingListCheckOffService() {
