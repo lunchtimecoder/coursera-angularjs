@@ -9,23 +9,21 @@
     ToBuyController.$inject = ['ShoppingListCheckOffService'];
     function ToBuyController(ShoppingListCheckOffService) {
         var ToBuyList = this;
-        ToBuyList.message = "Everything is bought";
         ToBuyList.items = ShoppingListCheckOffService.ToBuyList;
         ToBuyList.bought = function (boughtItem) {
             ShoppingListCheckOffService.moveToBought(boughtItem);
         }
         ToBuyList.isEmpty = function() {
-            return (ToBuyList.items.length==0) ? "Everything is bought" : "";
+            return (ToBuyList.items.length==0) ? 1 : 0;
         }
     } //End of ToBuyController
 
     AlreadyBoughtController.$inject = ['ShoppingListCheckOffService'];
     function AlreadyBoughtController(ShoppingListCheckOffService) {
         var BoughtList = this;
-        BoughtList.message = "Nothing bought yet";
         BoughtList.items = ShoppingListCheckOffService.BoughtList;
         BoughtList.isEmpty = function() {
-            return (BoughtList.items.length==0) ? "Nothing bought yet" : "";
+            return (BoughtList.items.length==0) ? 1 : 0;
         }
     } //End of AlreadyBoughtController
 
