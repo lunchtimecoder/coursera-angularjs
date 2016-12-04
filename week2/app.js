@@ -32,7 +32,13 @@
     function ShoppingListCheckOffService() {
         //maintain lists
         var ShoppingService = this;
-        ShoppingService.ToBuyList = [{name:'Space Car',quantity:'10'}];
+        ShoppingService.ToBuyList = [
+            {name:'Laser Pistols',quantity:'10'},
+            {name:'Plasma Cannons',quantity:'2'},
+            {name:'Rocket Launchers',quantity:'1'},
+            {name:'Laser Lances',quantity:'30'},
+            {name:'Grape Shot',quantity:'99'}
+            ];
         ShoppingService.BoughtList = [];
 
         ShoppingService.moveToBought = function (moveItem) {
