@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="441ec68d-f92a-4190-b730-1bf2c77d8c7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3-starter-code/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3-starter-code/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3-starter-code/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3-starter-code/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignment-3.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3-starter-code/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3-starter-code/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3-starter-code/loader/itemsloaderindicator.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3-starter-code/styles/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3-starter-code/styles/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/week3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../week2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../week2/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="441ec68d-f92a-4190-b730-1bf2c77d8c7f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -500,12 +486,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481321828039</updated>
-      <workItem from="1481321830648" duration="348000" />
+      <workItem from="1481321830648" duration="613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348000" />
+    <option name="totallyTimeSpent" value="613000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="214" y="22" width="1400" height="988" extended-state="0" />
