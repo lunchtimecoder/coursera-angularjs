@@ -6,11 +6,11 @@
         .constant('MenuSourceData',"https://davids-restaurant.herokuapp.com/menu_items.json")
         .service('MenuSearchService', MenuSearchService);
 
-    NarrowItDownController.$inject = ['NarrowItDownController'];
-    function NarrowItDownController(NarrowItDownController) {
+    NarrowItDownController.$inject = ['MenuSearchService'];
+    function NarrowItDownController(MenuSearchService) {
       var NarrowCtl = this;
       NarrowCtl.button = function() {
-          return MenuSearchService("test");
+          return MenuSearchService.getMatchedMenusItems("test");
       }
     }
 
@@ -26,7 +26,7 @@
                 // return processed items
                 return foundItems;
             }).catch(function (error) {
-                console.log("Not Happening!")
+                console.log("Not Happening! " + error)
             });
         }
 
