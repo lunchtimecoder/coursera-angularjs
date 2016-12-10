@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../week3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../week3/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../week3/app.js" afterPath="$PROJECT_DIR$/../week3/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../week3/index.html" afterPath="$PROJECT_DIR$/../week3/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -535,7 +534,7 @@
       <updated>1480728911234</updated>
       <workItem from="1480728914574" duration="9207000" />
       <workItem from="1481321785738" duration="15000" />
-      <workItem from="1481363937605" duration="2589000" />
+      <workItem from="1481363937605" duration="2781000" />
     </task>
     <task id="LOCAL-00001" summary="Week 2">
       <created>1480773632103</created>
@@ -688,7 +687,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11811000" />
+    <option name="totallyTimeSpent" value="12003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
