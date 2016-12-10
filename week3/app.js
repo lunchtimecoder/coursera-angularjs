@@ -13,16 +13,17 @@
       NarrowCtl.button = function() {
           //return MenuSearchService.getMatchedMenusItems("test");
           var rtnPromise = MenuSearchService.getMatchedMenusItems("test");
-          rtnPromise.then(function (result) {
-              // process result and only keep items that match
-              var foundItems = result.data;
-              console.log(foundItems);
-              // return processed items
-              //return foundItems;
-          }).catch(function (error) {
-              console.log("Not Happening! " + error)
-          });
-          return "test";
+          //rtnPromise.then(function (result) {
+          // process result and only keep items that match
+          //    var foundItems = result.data;
+          //    console.log(foundItems);
+          //    // return processed items
+          //    //return foundItems;
+          //}).catch(function (error) {
+          //    console.log("Not Happening! " + error)
+          //});
+          console.log("Not Happening! ");
+          return rtnPromise;
       }
     }
 
@@ -31,11 +32,11 @@
         var MenuSearch = this;
 //"/menu_items.json"
         MenuSearch.getMatchedMenusItems = function(searchTerm) {
-            var response = $http({
-                method: "GET",
-                url: (SourcePath)
-                });
-            return response;
+            //var response = $http({
+            //    method: "GET",
+            //    url: (SourcePath)
+            //    });
+            return searchTerm;
         }
 //        MenuSearchService.$inject = ['$http','SourcePath'];
 //        function MenuSearchService($http,SourcePath) {
