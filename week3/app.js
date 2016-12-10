@@ -29,11 +29,11 @@
     MenuSearchService.$inject = ['$http','SourcePath'];
     function MenuSearchService($http,SourcePath) {
         var MenuSearch = this;
-
+//"/menu_items.json"
         MenuSearch.getMatchedMenusItems = function(searchTerm) {
             var response = $http({
                 method: "GET",
-                url: (SourcePath + "/menu_items.json")
+                url: (SourcePath + "/categories.json")
                 });
             return response;
         }
