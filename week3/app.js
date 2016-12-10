@@ -3,7 +3,7 @@
 
     angular.module('NarrowItDownApp', [])
         .controller('NarrowItDownController', NarrowItDownController)
-        .constant('SourceData',"https://davids-restaurant.herokuapp.com/menu_items.json")
+        .constant('SourcePath',"https://davids-restaurant.herokuapp.com")
         .service('MenuSearchService', MenuSearchService);
 
     NarrowItDownController.$inject = ['MenuSearchService'];
@@ -14,12 +14,12 @@
       }
     }
 
-    MenuSearchService.$inject = ['$http','SourceData'];
+    MenuSearchService.$inject = ['$http','SourcePath'];
     function MenuSearchService($http) {
         var MenuSearch = this;
 
         MenuSearch.getMatchedMenusItems = function(searchTerm) {
-            $http({method: 'GET', url: SourceData})
+            $http({method: 'GET', url: (SourcePath + "/menu_items.json") })
                 .then(function (result) {
                 // process result and only keep items that match
                 var foundItems = result.data;
