@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9fec9264-a598-4fb9-a6aa-07bcdf2e67b2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../week3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../week3/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../week3/app.js" afterPath="$PROJECT_DIR$/../week3/app.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
