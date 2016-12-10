@@ -15,11 +15,11 @@
     }
 
     MenuSearchService.$inject = ['$http','SourcePath'];
-    function MenuSearchService($http) {
+    function MenuSearchService($http,SourcePath) {
         var MenuSearch = this;
 
         MenuSearch.getMatchedMenusItems = function(searchTerm) {
-            $http({method: 'GET', url: (SourcePath + "/menu_items.json") })
+            $http({method: "GET", url: (SourcePath + "/menu_items.json") })
                 .then(function (result) {
                 // process result and only keep items that match
                 var foundItems = result.data;
