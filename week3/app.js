@@ -21,7 +21,7 @@
             return $http({url: "https://davids-restaurant.herokuapp.com/menu_items.json"}).then(function (result) {
                 // process result and only keep items that match
                 var foundItems = result.data;
-
+                console.log(foundItems);
                 // return processed items
                 return foundItems;
             }).catch(function (error) {
