@@ -18,14 +18,14 @@
         var MenuSearch = this;
 
         MenuSearch.getMatchedMenusItems = function(searchTerm) {
-            return $http({url: "https://davids-restaurant.herokuapp.com/menu_items.json"})
+            $http({url: "https://davids-restaurant.herokuapp.com/menu_items.json"})
                 .then(function (result) {
                 // process result and only keep items that match
                 var foundItems = result.data;
                 console.log(foundItems);
                 // return processed items
                 //return foundItems;
-                    return "place holder";
+                    return searchTerm;
             }).catch(function (error) {
                 console.log("Not Happening! " + error)
             });
