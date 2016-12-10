@@ -15,7 +15,7 @@
           var rtnPromise = MenuSearchService.getMatchedMenusItems("test");
           rtnPromise.then(function (result) {
               // process result and only keep items that match
-              var foundItems = result.data.menu_items;
+              var foundItems = result.data;
               console.log(foundItems);
               // return processed items
               //return foundItems;
