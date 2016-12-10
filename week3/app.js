@@ -18,7 +18,6 @@
               console.log(foundItems);
               // return processed items
               //return foundItems;
-              return "djdjd";
           }).catch(function (error) {
               console.log("Not Happening! " + error)
           });
