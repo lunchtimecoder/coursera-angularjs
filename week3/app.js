@@ -14,7 +14,7 @@
           var rtnPromise = MenuSearchService.getMatchedMenusItems("test");
           rtnPromise.then(function (result) {
               // process result and only keep items that match
-              var foundItems = result.data;
+              var foundItems = result.data.menu_items;
               console.log(foundItems);
               // return processed items
               //return foundItems;
@@ -33,7 +33,7 @@
         MenuSearch.getMatchedMenusItems = function(searchTerm) {
             var response = $http({
                 method: "GET",
-                url: (SourcePath + "/categories.json")
+                url: (SourcePath + "/menu_items.json")
                 });
             return response;
         }
