@@ -4,47 +4,79 @@
     angular.module('NarrowItDownApp', [])
         .controller('NarrowItDownController', NarrowItDownController)
         .constant('SourcePath',"https://davids-restaurant.herokuapp.com")
+        .directive('foundItems', foundItemsDirective)
         .service('MenuSearchService', MenuSearchService);
 
     NarrowItDownController.$inject = ['MenuSearchService'];
     function NarrowItDownController(MenuSearchService) {
       var NarrowCtl = this;
-      NarrowCtl.button = function() {
-          //return MenuSearchService.getMatchedMenusItems("test");
-          var rtnPromise = MenuSearchService.getMatchedMenusItems("test");
-          //rtnPromise.then(function (result) {
-          // process result and only keep items that match
-          //    var foundItems = result.data;
-          //    console.log(foundItems);
-          //    // return processed items
-          //    //return foundItems;
-          //}).catch(function (error) {
-          //    console.log("Not Happening! " + error)
-          //});
-          console.log("Not Happening! ");
-          return rtnPromise;
+        NarrowCtl.title = "Found Items Title";
+        NarrowCtl.button = function() {
+          var rtnPromise = MenuSearchService.getMatchedMenusItems(NarrowCtl.itemName);
+          rtnPromise.then(function (result) {
+            //process result and only keep items that match
+              NarrowCtl.found = result;
+              console.log(NarrowCtl.found);
+          }).catch(function (error) {
+              NarrowCtl.found = []; //Empty List
+              console.log("Not Happening! " + error)
+          });
       }
+      NarrowCtl.removeItem = function (itemIndex) {
+          NarrowCtl.found.splice(itemIndex, 1);
+        };
     }
 
     MenuSearchService.$inject = ['$http','SourcePath'];
     function MenuSearchService($http,SourcePath) {
         var MenuSearch = this;
-//"/menu_items.json"
-
-         MenuSearch.getMatchedMenusItems = function(searchTerm) {
-             $http({method: "GET", url: (SourcePath + "/menu_items.json") })
+        MenuSearch.getMatchedMenusItems = function(searchTerm) {
+             return $http({method: "GET", url: (SourcePath + "/menu_items.json") })
                     .then(function (result) {
                         // process result and only keep items that match
-                        var foundItems = result.data.menu_items;
-                        console.log(foundItems);
+                        var foundItems = result.data.menu_items.filter( function (item) {
+                            return item.description.indexOf(searchTerm) >= 0;
+                        });
+                        //console.log(foundItems);
                         // return processed items
-                       //return foundItems;
-                        return searchTerm;
-                    }).catch(function (error) {
-                    console.log("Not Happening! " + error)
-                });
+                        return foundItems;
+                    })
             }
 
     } //End of MenuSearchService
+
+    function foundItemsDirective() {
+        var ddo = {
+            templateUrl: 'foundItems.html',
+            scope: {
+                items: '<',
+                myTitle: '@title',
+                onRemove: '&'
+            },
+            controller: foundItemsDirectiveController,
+            controllerAs: 'list',
+            bindToController: true
+            //link: foundItemsDirectiveLink,
+            //transclude: true
+        };
+
+        return ddo;
+    } //End of foundItemsDirective
+
+    function foundItemsDirectiveController() {
+        var list = this;
+        list.cookiesInList = function () {
+            found.splice(3, 1);
+            for (var i = 0; i < list.items.length; i++) {
+                var name = list.items[i].name;
+                if (name.toLowerCase().indexOf("cookie") !== -1) {
+                    return true;
+                }
+            }
+
+            return false;
+        };
+
+    } //End oF foundItemsDirectiveController
 
 })(); //End of all
