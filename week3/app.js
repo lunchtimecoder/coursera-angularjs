@@ -10,6 +10,7 @@
     NarrowItDownController.$inject = ['MenuSearchService'];
     function NarrowItDownController(MenuSearchService) {
       var NarrowCtl = this;
+        NarrowCtl.found = []; //Empty List
         NarrowCtl.title = "Found Items Title";
         NarrowCtl.errorMessage = "Nothing found";
         NarrowCtl.button = function() {
