@@ -50,7 +50,6 @@
             templateUrl: 'foundItems.html',
             scope: {
                 items: '<',
-                myTitle: '@title',
                 onRemove: '&'
             },
             controller: NarrowItDownController,
