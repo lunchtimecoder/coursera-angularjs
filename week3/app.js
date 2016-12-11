@@ -16,8 +16,7 @@
           var rtnPromise = MenuSearchService.getMatchedMenusItems(NarrowCtl.itemName);
           rtnPromise.then(function (result) {
             //process result and only keep items that match
-              NarrowCtl.found = result;
-              console.log(NarrowCtl.found);
+          NarrowCtl.found = result;
           }).catch(function (error) {
               NarrowCtl.found = []; //Empty List
               console.log("Not Happening! " + error);
