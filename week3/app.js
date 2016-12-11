@@ -11,6 +11,7 @@
     function NarrowItDownController(MenuSearchService) {
       var NarrowCtl = this;
         NarrowCtl.title = "Found Items Title";
+        NarrowCtl.errorMessage = "No Items Found!";
         NarrowCtl.button = function() {
           var rtnPromise = MenuSearchService.getMatchedMenusItems(NarrowCtl.itemName);
           rtnPromise.then(function (result) {
