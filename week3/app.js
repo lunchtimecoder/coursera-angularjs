@@ -19,7 +19,7 @@
               console.log(NarrowCtl.found);
           }).catch(function (error) {
               NarrowCtl.found = []; //Empty List
-              console.log("Not Happening! " + error)
+              console.log("Not Happening! " + error);
           });
       }
       NarrowCtl.removeItem = function (itemIndex) {
@@ -56,8 +56,6 @@
             controller: NarrowItDownController,
             controllerAs: 'list',
             bindToController: true
-            //link: foundItemsDirectiveLink,
-            //transclude: true
         };
 
         return ddo;

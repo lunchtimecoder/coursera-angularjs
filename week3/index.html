@@ -20,10 +20,10 @@
     </div>
 
     <!-- found-items should be implemented as a component -->
-    <found-items
-            title={{ NarrowCtl.title }}
-        on-remove="list.removeItem(index)">
-        items=NarrowCtl.found
+    <found-items>
+        title={{ NarrowCtl.title }}
+        on-remove="NarrowCtl.removeItem(index)"
+        items="NarrowCtl.found"
     </found-items>
   </div>
 
