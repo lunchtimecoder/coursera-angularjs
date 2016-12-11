@@ -53,7 +53,7 @@
                 myTitle: '@title',
                 onRemove: '&'
             },
-            controller: foundItemsDirectiveController,
+            controller: NarrowItDownController,
             controllerAs: 'list',
             bindToController: true
             //link: foundItemsDirectiveLink,
@@ -62,21 +62,5 @@
 
         return ddo;
     } //End of foundItemsDirective
-
-    function foundItemsDirectiveController() {
-        var list = this;
-        list.cookiesInList = function () {
-            found.splice(3, 1);
-            for (var i = 0; i < list.items.length; i++) {
-                var name = list.items[i].name;
-                if (name.toLowerCase().indexOf("cookie") !== -1) {
-                    return true;
-                }
-            }
-
-            return false;
-        };
-
-    } //End oF foundItemsDirectiveController
 
 })(); //End of all
