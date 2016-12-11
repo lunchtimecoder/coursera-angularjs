@@ -35,7 +35,7 @@
                 method: "GET",
                 url: (SourcePath + "/menu_items.json")
                 });
-            onsole.log(response);
+            console.log(response);
             return "no";
         }
 //        MenuSearchService.$inject = ['$http','SourcePath'];
