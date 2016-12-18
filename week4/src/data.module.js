@@ -14,7 +14,6 @@
         MenuData.getAllCategories = function() {
             return $http({method: "GET", url: (SourcePath + "/categories.json") })
                 .then(function (result) {
-                    console.log("cat", result.data);
                     return result.data;
                 }).catch(function (error) {
                     console.log("Not Happening! " + error);
@@ -24,7 +23,6 @@
         MenuData.getItemsForCategory = function(categoryShortName) {
             return $http({method: "GET", url: (SourcePath + "/menu_items.json?category="+categoryShortName) })
                 .then(function (result) {
-                    console.log(result.data.menu_items);
                     return result.data.menu_items;
                 }).catch(function (error) {
                    console.log("Not Happening! " + error);
