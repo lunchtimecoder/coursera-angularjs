@@ -5,11 +5,14 @@
 
     function SignupService() {
         var service = this;
-        service.user = {fav:""};
+        service.user = {};
 
-        service.setFav = function (myFav) {
-            service.user.fav = myFav;
-            console.log("set fav",myFav);
+        service.saveUser = function (myUser) {
+            service.user = myUser;
+            console.log("set fav",myUser);
+        };
+        service.getUser = function () {
+            return service.user;
         };
     };
 
