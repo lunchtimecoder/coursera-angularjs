@@ -36,7 +36,6 @@
   opacity: .8;
 }
 /* END HOME PAGE */
-
 /* MENU CATEGORIES PAGE */
 .category-tile {
   position: relative;
@@ -66,7 +65,21 @@
   margin-bottom: 50px;
 }
 /* END MENU CATEGORIES PAGE */
+/* SignUp Form */
+input[type="text"] {
+  background-color : #3F0C1F;
+}
+input[type="email"] {
+  background-color : #3F0C1F;
+}
+.ng-touched.ng-valid {
+  border: 2px green solid;
+}
 
+.ng-touched.ng-invalid {
+  border: 2px red solid;
+}
+/* End SignUp Form */
 /* SINGLE CATEGORY PAGE */
 .menu-item-tile {
   margin-bottom: 25px;
