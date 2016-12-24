@@ -66,11 +66,9 @@
 }
 /* END MENU CATEGORIES PAGE */
 /* SignUp Form */
-input[type="text"] {
+input[type="text"], input[type="email"] {
   background-color : #3F0C1F;
-}
-input[type="email"] {
-  background-color : #3F0C1F;
+  margin-left: 50px;
 }
 .ng-touched.ng-valid {
   border: 2px green solid;
@@ -78,6 +76,9 @@ input[type="email"] {
 
 .ng-touched.ng-invalid {
   border: 2px red solid;
+}
+p {
+  text-indent: 50px;
 }
 /* End SignUp Form */
 /* SINGLE CATEGORY PAGE */

@@ -1,15 +1,15 @@
 <div class="menu-item-tile">
-<h1>My Info</h1><br>
+    <h1><p>My Info</h1></p><br>
     <span ng-if="myinfoCtrl.notFound">
-        Not signed up yet. <a ui-sref="public.signup">SignUp Now!</a>
+        <p>Not signed up yet. <a ui-sref="public.signup">SignUp Now!</a></p>
         </span>
     <span ng-if="!myinfoCtrl.notFound">
-    {{myinfoCtrl.user.firstName}} {{myinfoCtrl.user.lastName}}<br>
-    EMail : {{myinfoCtrl.user.email}}<br>
-    Phone : {{myinfoCtrl.user.phone}}<br>
-    Favourite Dish : {{myinfoCtrl.user.fav}}<br><br>
-    <img class="img-responsive" width="250" height="150" ng-src="{{myinfoCtrl.dish.img}}" alt="{{$ctrl.menuItem.name}}"><br>
-    {{ myinfoCtrl.dish.name }}<br>
-    {{ myinfoCtrl.dish.description }}<br>
+        <p>{{myinfoCtrl.user.firstName}} {{myinfoCtrl.user.lastName}}</p>
+        <p>EMail : {{myinfoCtrl.user.email}}</p>
+        <p>Phone : {{myinfoCtrl.user.phone}}</p>
+        <p>Favourite Dish : {{myinfoCtrl.user.fav}}</p><br>
+        <img class="img-responsive" width="250" height="150" hspace="50" ng-src="{{myinfoCtrl.dish.img}}" alt="{{$ctrl.menuItem.name}}"><br>
+        <p>{{ myinfoCtrl.dish.name }}</p>
+        <p>{{ myinfoCtrl.dish.description }}</p><br>
     </span>
 </div>

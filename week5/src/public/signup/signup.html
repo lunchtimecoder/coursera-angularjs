@@ -1,5 +1,5 @@
 <div class="menu-item-tile">
-<h1>SingUp Newsletter {{ signupCtrl.blah }}</h1>
+    <h1><p>SignUp Newsletter</p></h1>
     <form name='signUpForm' novalidate>
 
         <input type="text" name="firstName" placeholder="First Name"
@@ -7,7 +7,6 @@
                required
                minlength="4"
                ng-maxlength="15">
-        {{ signupCtrl.user.firstName }}
         <span
                 ng-if="(signUpForm.firstName.$error.minlength || signUpForm.firstName.$error.required) && signUpForm.firstName.$touched">
             Username must be at least 4 characters long
@@ -21,7 +20,6 @@
                required
                minlength="4"
                ng-maxlength="20">
-        {{ signupCtrl.user.lastName }}
         <span
                 ng-if="(signUpForm.lastName.$error.minlength || signUpForm.lastName.$error.required) && signUpForm.lastName.$touched">
             Username must be at least 4 characters long
@@ -55,12 +53,12 @@
             No such menu number exists
           </span>
         <br>
-        <button
+        <p><button
                 ng-disabled="signUpForm.$invalid"
-                ng-click="signupCtrl.submit()">Submit</button>
+                ng-click="signupCtrl.submit()">Submit</button></p>
 
         <div style="margin-top: 10px;" ng-if="signupCtrl.completed">
-          Submitted Registration
+            <p>Submitted Registration</p>
         </div>
     </form>
 </div>
