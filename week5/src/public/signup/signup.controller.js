@@ -2,8 +2,9 @@
     "use strict";
     angular.module('public')
         .controller('SignupController', SignupController);
+
     SignupController.$inject = ['menuItems','SignupService'];
-    function SignupController(menuItems,SignupService) {
+    function SignupController(menuItems, SignupService) {
         var signupCtrl = this;
 
         signupCtrl.submit = function () {
